@@ -18,34 +18,42 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<!-- ************************ -->
-<!-- ***   MAIN SECTION   *** -->
-<!-- ************************ -->
-<main class="main-content">
-<div class="container">
-  <form>
-    <label for="english">English</label>
-    <input id="english" type="text">
-    <label for="uz">Uzbek</label>
-    <input id="uz" type="text">
-    <button class="send" type="submit">yuborish</button>
-  </form>
+  <!-- ************************ -->
+  <!-- ***   MAIN SECTION   *** -->
+  <!-- ************************ -->
+  <main class="main-content">
+    <div class="container">
+      <form>
+        <label for="english">English</label>
+        <input id="english" type="text">
+        <label for="uz">Uzbek</label>
+        <input id="uz" type="text">
+        <button class="send" type="submit">yuborish</button>
+      </form>
 
-  <div id="word">
-    <!-- new words list -->
-    <ul id="word-list-new">
-<li id="ul-head"><button class="btn-w" id="right"><img src="img/right.png"></button>
-   <button class="btn-w" id="delete"><img src="img/delete.png"></button></li>
-    </ul>
-<!-- already known words list  -->
-<ul id="word-list-known">
-  <li id="ul-head"><button class="btn-w" id="left"><img src="img/left.png"></button>
-    <button class="btn-w" id="delete"><img src="img/delete.png"></button></li>
-</ul>
-  </div>
-</div>
-</main>
+      <div id="word">
+        <!-- new words list -->
+        <div id="w">
+          <p class="new">yangi so'zlar</p>
+          <ul id="word-list-new">
+            <div id="control">
+              <button class="btn-w" id="right"><img src="img/right.png"></button>
+              <button class="btn-w" id="delete"><img src="img/delete.png"></button>
+            </div>
+          </ul></div>
+          <!-- already known words list  -->
+          <div id="w">
+            <p class="known">yodlangan so'zlar</p>
+            <ul id="word-list-known">
+              <div id="control-right">
+                <button class="btn-w" id="left"><img src="img/left.png"></button>
+                <button class="btn-w" id="delete"><img src="img/delete.png"></button>
+              </div>
+            </ul></div>
+          </div>
+        </div>
+      </main>
 
-  <script src="js/main.js"></script>
-</body>
-</html>
+      <script src="js/main.js"></script>
+    </body>
+    </html>
